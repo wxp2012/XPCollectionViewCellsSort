@@ -87,14 +87,20 @@
     }
     self.gameModel = model;
     [self.titleButton setTitle:model.gameName != nil ? model.gameName : @"" forState:UIControlStateNormal];
-    [self.imageButton yy_setImageWithURL:[NSURL URLWithString:model.gameIcon] forState:UIControlStateNormal placeholder:nil options:YYWebImageOptionAvoidSetImage completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
-        if (image) {
-            image = [image yy_imageByResizeToSize:self.bounds.size];
-            image = [image yy_imageByRoundCornerRadius:10.];
-            [self.imageButton setImage:image forState:UIControlStateNormal];
-        }
-    }];
-}
+    NSString *keyString = [NSString stringWithFormat:@"%@",model.gameIcon];
+    if ([[YYImageCache sharedCache] containsImageForKey:keyString]) {
+        [self.imageButton setImage:[[YYImageCache sharedCache] getImageForKey:keyString] forState:UIControlStateNormal];
+    }else{
+        [self.imageButton yy_setImageWithURL:[NSURL URLWithString:model.gameIcon] forState:UIControlStateNormal placeholder:nil options:YYWebImageOptionRefreshImageCache progress:nil transform:^UIImage * _Nullable(UIImage * _Nonnull image, NSURL * _Nonnull url) {
+            return [[image yy_imageByResizeToSize:self.bounds.size] yy_imageByRoundCornerRadius:10.];
+        } completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+            if (image) {
+                [[YYImageCache sharedCache] setImage:image forKey:keyString];
+            }
+        }];
+
+    }
+    }
     
 - (void)setTheCellRightTopImageContent:(TopRightImageShowType)type {
     _topRightImageV.hidden = NO;
