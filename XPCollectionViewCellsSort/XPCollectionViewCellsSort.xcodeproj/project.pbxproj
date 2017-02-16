@@ -15,6 +15,11 @@
 		2D652E4F1E5208B3008E4809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D652E4D1E5208B3008E4809 /* LaunchScreen.storyboard */; };
 		2D652E5A1E5208B3008E4809 /* XPCollectionViewCellsSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D652E591E5208B3008E4809 /* XPCollectionViewCellsSortTests.m */; };
 		2D652E651E5208B3008E4809 /* XPCollectionViewCellsSortUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D652E641E5208B3008E4809 /* XPCollectionViewCellsSortUITests.m */; };
+		2D9579471E554F00005E7D9B /* GameClassifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9579461E554F00005E7D9B /* GameClassifyModel.m */; };
+		2D95794A1E554FB9005E7D9B /* SortCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9579491E554FB9005E7D9B /* SortCollectionReusableView.m */; };
+		2D95794E1E5550AE005E7D9B /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D95794D1E5550AE005E7D9B /* UIColor+Additions.m */; };
+		2D9579511E555130005E7D9B /* SortCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9579501E555130005E7D9B /* SortCollectionViewCell.m */; };
+		2D9579541E5554AB005E7D9B /* SortBasicCollectionCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9579531E5554AB005E7D9B /* SortBasicCollectionCellLayout.m */; };
 		92A3390B61A0EA241A4DF210 /* libPods-XPCollectionViewCellsSort.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59089F45BAC33ED9D8A66D10 /* libPods-XPCollectionViewCellsSort.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +57,16 @@
 		2D652E601E5208B3008E4809 /* XPCollectionViewCellsSortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XPCollectionViewCellsSortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D652E641E5208B3008E4809 /* XPCollectionViewCellsSortUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPCollectionViewCellsSortUITests.m; sourceTree = "<group>"; };
 		2D652E661E5208B3008E4809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D9579451E554F00005E7D9B /* GameClassifyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameClassifyModel.h; sourceTree = "<group>"; };
+		2D9579461E554F00005E7D9B /* GameClassifyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameClassifyModel.m; sourceTree = "<group>"; };
+		2D9579481E554FB9005E7D9B /* SortCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortCollectionReusableView.h; sourceTree = "<group>"; };
+		2D9579491E554FB9005E7D9B /* SortCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortCollectionReusableView.m; sourceTree = "<group>"; };
+		2D95794C1E5550AE005E7D9B /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		2D95794D1E5550AE005E7D9B /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		2D95794F1E555130005E7D9B /* SortCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortCollectionViewCell.h; sourceTree = "<group>"; };
+		2D9579501E555130005E7D9B /* SortCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortCollectionViewCell.m; sourceTree = "<group>"; };
+		2D9579521E5554AB005E7D9B /* SortBasicCollectionCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortBasicCollectionCellLayout.h; sourceTree = "<group>"; };
+		2D9579531E5554AB005E7D9B /* SortBasicCollectionCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortBasicCollectionCellLayout.m; sourceTree = "<group>"; };
 		59089F45BAC33ED9D8A66D10 /* libPods-XPCollectionViewCellsSort.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XPCollectionViewCellsSort.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4ECD60F17909296EEE1C698 /* Pods-XPCollectionViewCellsSort.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPCollectionViewCellsSort.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPCollectionViewCellsSort/Pods-XPCollectionViewCellsSort.release.xcconfig"; sourceTree = "<group>"; };
 		F039D7D86E07930D6291013F /* Pods-XPCollectionViewCellsSort.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPCollectionViewCellsSort.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPCollectionViewCellsSort/Pods-XPCollectionViewCellsSort.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +106,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2D3A14301E557DCE00C3D4CC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D652E451E5208B3008E4809 /* MainViewController.h */,
+				2D652E461E5208B3008E4809 /* MainViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		2D652E331E5208B3008E4809 = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +140,12 @@
 		2D652E3E1E5208B3008E4809 /* XPCollectionViewCellsSort */ = {
 			isa = PBXGroup;
 			children = (
+				2D3A14301E557DCE00C3D4CC /* ViewController */,
+				2D95794B1E555057005E7D9B /* Util */,
+				2D9579441E554EB8005E7D9B /* Views */,
+				2D9579431E554EA9005E7D9B /* Models */,
 				2D652E421E5208B3008E4809 /* AppDelegate.h */,
 				2D652E431E5208B3008E4809 /* AppDelegate.m */,
-				2D652E451E5208B3008E4809 /* MainViewController.h */,
-				2D652E461E5208B3008E4809 /* MainViewController.m */,
 				2D652E481E5208B3008E4809 /* Main.storyboard */,
 				2D652E4B1E5208B3008E4809 /* Assets.xcassets */,
 				2D652E4D1E5208B3008E4809 /* LaunchScreen.storyboard */,
@@ -153,6 +179,37 @@
 				2D652E661E5208B3008E4809 /* Info.plist */,
 			);
 			path = XPCollectionViewCellsSortUITests;
+			sourceTree = "<group>";
+		};
+		2D9579431E554EA9005E7D9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D9579451E554F00005E7D9B /* GameClassifyModel.h */,
+				2D9579461E554F00005E7D9B /* GameClassifyModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2D9579441E554EB8005E7D9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D9579481E554FB9005E7D9B /* SortCollectionReusableView.h */,
+				2D9579491E554FB9005E7D9B /* SortCollectionReusableView.m */,
+				2D95794F1E555130005E7D9B /* SortCollectionViewCell.h */,
+				2D9579501E555130005E7D9B /* SortCollectionViewCell.m */,
+				2D9579521E5554AB005E7D9B /* SortBasicCollectionCellLayout.h */,
+				2D9579531E5554AB005E7D9B /* SortBasicCollectionCellLayout.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2D95794B1E555057005E7D9B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2D95794C1E5550AE005E7D9B /* UIColor+Additions.h */,
+				2D95794D1E5550AE005E7D9B /* UIColor+Additions.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		DF9A495D8461BEBE30200B41 /* Pods */ = {
@@ -348,9 +405,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D95794A1E554FB9005E7D9B /* SortCollectionReusableView.m in Sources */,
+				2D9579511E555130005E7D9B /* SortCollectionViewCell.m in Sources */,
 				2D652E471E5208B3008E4809 /* MainViewController.m in Sources */,
 				2D652E441E5208B3008E4809 /* AppDelegate.m in Sources */,
 				2D652E411E5208B3008E4809 /* main.m in Sources */,
+				2D9579471E554F00005E7D9B /* GameClassifyModel.m in Sources */,
+				2D9579541E5554AB005E7D9B /* SortBasicCollectionCellLayout.m in Sources */,
+				2D95794E1E5550AE005E7D9B /* UIColor+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +646,7 @@
 				2D652E6B1E5208B3008E4809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D652E6C1E5208B3008E4809 /* Build configuration list for PBXNativeTarget "XPCollectionViewCellsSortTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +655,7 @@
 				2D652E6E1E5208B3008E4809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D652E6F1E5208B3008E4809 /* Build configuration list for PBXNativeTarget "XPCollectionViewCellsSortUITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +664,7 @@
 				2D652E711E5208B3008E4809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
