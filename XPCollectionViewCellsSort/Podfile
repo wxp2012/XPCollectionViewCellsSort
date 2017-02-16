@@ -1,0 +1,6 @@
+target 'XPCollectionViewCellsSort' do
+
+pod 'YYWebImage'
+pod 'Masonry'
+
+end 
