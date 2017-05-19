@@ -69,22 +69,7 @@ typedef NS_ENUM(NSInteger, DragScrollDirction) {
     [self setUpCollectionViewGesture];
 }
 
-
-- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewLayoutAttributes *attribute = [super layoutAttributesForItemAtIndexPath:indexPath];
-    return attribute;
-}
-
 - (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
-    UICollectionViewLayoutAttributes *attr = [self layoutAttributesForItemAtIndexPath:itemIndexPath];
-    if ([_indexPathsToAnimate containsObject:itemIndexPath]) {
-        [_indexPathsToAnimate removeObject:itemIndexPath]; //确保只会出现一次
-    }
-    return attr;
-}
-
-- (UICollectionViewLayoutAttributes*)finalLayoutAttributesForDisappearingItemAtIndexPath:(NSIndexPath *)itemIndexPath
-{
     UICollectionViewLayoutAttributes *attr = [self layoutAttributesForItemAtIndexPath:itemIndexPath];
     if ([_indexPathsToAnimate containsObject:itemIndexPath]) {
         [_indexPathsToAnimate removeObject:itemIndexPath]; //确保只会出现一次

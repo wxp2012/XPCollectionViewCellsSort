@@ -145,7 +145,7 @@ static NSString * const kSortHeadReusableView = @"kSortHeadReusableView";
     self.sortCollectionView.delegate = self;
     [self.sortCollectionView registerClass:[SortCollectionViewCell class] forCellWithReuseIdentifier:kSortCollectionCell];
     [self.sortCollectionView registerClass:[SortCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kSortHeadReusableView];
-    self.sortCollectionView.frame = CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-64);
+    self.sortCollectionView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     self.collectionViewLayout.itemSize = CGSizeMake((CGRectGetWidth(self.view.bounds) - 90)/4, (CGRectGetWidth(self.view.bounds) - 90)/4 + 22);
     [self.view addSubview:self.sortCollectionView];
     
